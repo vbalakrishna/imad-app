@@ -4,7 +4,7 @@ var element=document.getElementById('mjs');
 
 element.innerHTML = 'New Value';
 
-var ele=document.getElementById('image');
+var img=document.getElementById('modi');
 var left=0;
 
 function moveRight(){
@@ -12,6 +12,6 @@ function moveRight(){
     ele.style.marginleft=marginleft+'px';
 }
 
-ele.onclick=function(){
+img.onclick=function(){
     var interval= setInterval(moveRight,50);
 };
