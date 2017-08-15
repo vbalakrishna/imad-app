@@ -4,14 +4,14 @@ var element=document.getElementById('mjs');
 
 element.innerHTML = 'New Value';
 
-var img=document.getElementById('madi');
-var marginLeft=0;
+var img = document.getElementById('madi');
+var marginLeft = 0;
 
-function moveRight(){
-    marginLeft=marginLeft+1;
-    ele.style.marginLeft=marginLeft+'px';
+function moveRight () {
+    marginLeft = marginLeft + 1;
+    ele.style.marginLeft = marginLeft + 'px';
 }
 
-img.onclick=function(){
-    var interval= setInterval(moveRight,50);
+img.onclick = function () {
+    var interval = setInterval(moveRight , 50);
 };
