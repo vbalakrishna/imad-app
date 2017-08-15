@@ -8,8 +8,8 @@ var img=document.getElementById('modi');
 var left=0;
 
 function moveRight(){
-    marginleft=marginleft+1;
-    ele.style.marginleft=marginleft+'px';
+    marginLeft=marginLeft+1;
+    ele.style.marginLeft=marginLeft+'px';
 }
 
 img.onclick=function(){
