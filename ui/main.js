@@ -4,8 +4,8 @@ var element=document.getElementById('mjs');
 
 element.innerHTML = 'New Value';
 
-var img=document.getElementById('modi');
-var left=0;
+var img=document.getElementById('madi');
+var marginLeft=0;
 
 function moveRight(){
     marginLeft=marginLeft+1;
