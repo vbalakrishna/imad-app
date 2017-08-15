@@ -19,7 +19,7 @@
 // count the no.of times
 
 var button=document.getElementById('counter');
-buton.onclick=function(){
+button.onclick=function(){
   
   var request=new XMLHttpRequest();
   
