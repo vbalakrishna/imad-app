@@ -2,4 +2,4 @@ console.log('Loaded!');
 
 var element=document.getElementById('mjs');
 
-element.innerHTMl = 'New Value';
+element.innerHTML = 'New Value';
