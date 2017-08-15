@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 var articles={
-  articleOne:{
+  'article-one':{
       title:'Article One I BalaKrishna',
       heading:'Article One',
       date:'Aug,14 2017',
@@ -27,7 +27,7 @@ var articles={
         `
       
   },
-  articleTwo:{
+  'article-two':{
       title:'Article Two I BalaKrishna',
       heading:'Article Two',
       date:'Aug,14 2017',
@@ -37,7 +37,7 @@ var articles={
                 </p>
         `
   },
-  articleThree:{
+  'article-three':{
       title:'Article Three I BalaKrishna',
       heading:'Article Three',
       date:'Aug,14 2017',
@@ -86,8 +86,8 @@ function createTemplate(data){
     `;
 }
 
-app.get('/article-one',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+app.get('/:articleName',function(req,res){
+    res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
