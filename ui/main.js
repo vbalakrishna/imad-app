@@ -32,7 +32,7 @@ button.onclick=function(){
           }
       }
   };
-  request.open('GET','http://vuyyurubalakrishna.imad.hasura-app.io/',true);
+  request.open('GET','http://vuyyurubalakrishna.imad.hasura-app.io/counter',true);
   request.send(null);
     
 };
